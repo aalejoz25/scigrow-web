@@ -10,8 +10,6 @@ const routes: Routes = [
   { path: 'registro', component: RegistroComponent },
   { path: '**', pathMatch: 'full', redirectTo: 'inicio' },
   //{ path: '', redirectTo: 'inicio' },
-
-
 ];
 
 @NgModule({
