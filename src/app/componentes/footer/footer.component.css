@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Sunflower:wght@500;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Sunflower:wght@500;700&display=swap");
 
 footer {
   background-color: #233b6a;
@@ -8,16 +8,27 @@ footer {
   bottom: 0;
 }
 
-.footer-title{
-  font-family: 'Sunflower', sans-serif;
+.footer-title {
+  font-family: "Sunflower", sans-serif;
   font-size: x-large;
 }
 
-.sunflower{
-  font-family: 'Sunflower', sans-serif;  
+.sunflower {
+  font-family: "Sunflower", sans-serif;
 }
 
-.row{
-padding-top: 30px;
-
+.copyright {
+  padding-top: 30px;
 }
+
+.logo-image{
+  width: 70px;
+  height: 70x;
+  overflow: hidden;
+  margin-top: -6px;
+}
+
+.container {
+  display: inline;
+}
+
