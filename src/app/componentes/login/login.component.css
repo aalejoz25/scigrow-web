@@ -20,3 +20,10 @@
     background: rgb(595959);
     cursor: pointer;
   }
+
+  .logo-image{
+    width: 70px;
+    height: 70x;
+    overflow: hidden;
+    margin-top: -6px;
+  }
