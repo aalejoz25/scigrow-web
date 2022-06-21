@@ -1,6 +1,8 @@
 footer { 
-    background-color: #03112f;
-    color: #0d0567;
+
+    background-color: #233b6a;
+    color: #fbfafd;
     font-size: 16px;
-  
+  position : relative; 
+  bottom: 0;
 }
