@@ -8,7 +8,7 @@
     <p>NOMBRE DE USUARIO: <input type="text" name="usuario" maxlength="6" /></p>
     <p>CONTRASEÑA: <input type="password" name="password" minlength="6" /></p>
     <a href="" style="margin-bottom: 25px;" >Has olvidado tu contraseña?</a>
-    <button style="margin-bottom: 25px;" type="submit">INICIAR SESION</button>
+    <button [routerLink]="['/proyectos_usuario']" style="margin-bottom: 25px;" type="submit">INICIAR SESION</button>
     <button [routerLink]="['/registro']" >REGISTRATE</button>
   </form>
 </div>
