@@ -1,0 +1,33 @@
+@import url('https://fonts.googleapis.com/css2?family=Sunflower:wght@500;700&display=swap');
+
+.navbar-custom {
+    background-color: #233B6A;
+}
+
+.header-button{
+    background-color: #FACC86;
+}
+
+.padding-button{
+    margin-left: 40px;
+}
+
+.logo-image{
+    width: 200px;
+    height: 50x;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-top: -6px;
+}
+
+.logo-login{
+    width: 30px;
+    height: 30x;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-top: -6px;
+}
+
+.sunflower{
+    font-family: 'Sunflower', sans-serif;
+}
