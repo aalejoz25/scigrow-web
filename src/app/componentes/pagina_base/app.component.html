@@ -1,43 +1,7 @@
 <app-header></app-header>
-<div class="input-group rounded">
-    <input type="search" class="form-control rounded" placeholder="Search" aria-label="Search" aria-describedby="search-addon" />
-    <span class="input-group-text border-0" id="search-addon">
-      <i class="fas fa-search"></i>
-    </span>
-  </div>
-  <h5 style="text-align: left ;"style="background-color: #595959">
-    mision 
-  </h5>
-<div>
-    <p style="text-align: justify;">
-nuestra pagina se encarga de .....
-    </p>
-    <h5 style="text-align: left ;" style="background-color: #595959">
-        vision 
-      </h5>
-    <div>
-        <p style="text-align: justify;">
-    nuestra pagina se encarga de .....
-        </p>
-</div>
 
-<p>Usuario: <input type="text" name="usuario" maxlength="6"></p>
+<main class="container-fluid">
+    <router-outlet></router-outlet>
+</main>
 
-<p>Contraseña: <input type="password" name="password" minlength="6"></p>
-
-<form action="registro" method="get">
-  <p>Nombre: <input type="text" name="nombre" size="40"></p>
-  <p>Apellido: <input type="text" name="apellido" size="40"></p>
-  <p>Año de nacimiento: <input type="number" name="nacido" min="1900"></p>
-    <p>correo: <input type="text" name="correo" size="40"></p>
-    <p>
-      Nivel
-      <input type="radio" name="hm" value="h"> investigador
-    <input type="radio" name="hm" value="m"> estudiante
-    </p>
-<p>
-    <input type="submit" value="Registrar">
-    <input type="reset" value="Eliminar">
-  </p>
-</form>
 <app-footer></app-footer>
