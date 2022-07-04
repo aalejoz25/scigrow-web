@@ -1,13 +1,16 @@
 <div class="d-flex justify-content-center mt-5 mb-4" style="display: block;">
    
-
   <form class="form">
-    <div style="padding-bottom: 40px;" class="logo-image">
+    <div style="padding-bottom: 10px;" class="logo-image">
         <img class="img-fluid" src="../../../assets/shared/Login.png" alt="Login">
     </div>
-    <p>NOMBRE DE USUARIO: <input type="text" name="usuario" maxlength="6" /></p>
-    <p>CONTRASEÑA: <input type="password" name="password" minlength="6" /></p>
-    <a href="" style="margin-bottom: 25px;" >Has olvidado tu contraseña?</a>
+    <div class="mb-3">
+      <input type="text" size="30" class="form-control" id="user" placeholder="Nombre de usuario">
+    </div>
+    <div class="mb-3">
+      <input type="password" size="30" class="form-control" id="password" placeholder="Contraseña">
+    </div>
+    <a href="" style="margin-bottom: 20px;" >Has olvidado tu contraseña?</a>
     <button [routerLink]="['/proyectos_usuario']" style="margin-bottom: 25px;" type="submit">INICIAR SESION</button>
     <button [routerLink]="['/registro']" >REGISTRATE</button>
   </form>
