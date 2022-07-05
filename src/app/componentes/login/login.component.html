@@ -1,17 +1,40 @@
-<div class="d-flex justify-content-center mt-5 mb-4" style="display: block;">
-   
+<div class="d-flex justify-content-center mt mb" style="display: block">
   <form class="form">
-    <div style="padding-bottom: 10px;" class="logo-image">
-        <img class="img-fluid" src="../../../assets/shared/Login.png" alt="Login">
+    <div style="padding-bottom: 10px" class="logo-image">
+      <img
+        class="img-fluid"
+        src="../../../assets/shared/Login.png"
+        alt="Login"
+      />
     </div>
     <div class="mb-3">
-      <input type="text" size="30" class="form-control" id="user" placeholder="Nombre de usuario">
+      <input
+        type="text"
+        size="30"
+        class="form-control"
+        id="user"
+        placeholder="Nombre de usuario"
+      />
     </div>
     <div class="mb-3">
-      <input type="password" size="30" class="form-control" id="password" placeholder="Contraseña">
+      <input
+        type="password"
+        size="30"
+        class="form-control"
+        id="password"
+        placeholder="Contraseña"
+      />
     </div>
-    <a [routerLink]="['/contrasena']" style="margin-bottom: 20px;" >Has olvidado tu contraseña?</a>
-    <button [routerLink]="['/proyectos_usuario']" style="margin-bottom: 25px;" type="submit">INICIAR SESION</button>
-    <button [routerLink]="['/registro']" >REGISTRATE</button>
+    <a [routerLink]="['/contrasena']" style="margin-bottom: 20px"
+      >Has olvidado tu contraseña?</a
+    >
+    <button
+      [routerLink]="['/proyectos_usuario']"
+      style="margin-bottom: 25px"
+      type="submit"
+    >
+      INICIAR SESION
+    </button>
+    <button [routerLink]="['/registro']">REGISTRATE</button>
   </form>
 </div>
