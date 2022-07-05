@@ -1,4 +1,4 @@
-<div class="d-flex justify-content-center mt-3 mb-0" style="display: block;">
+<div class="d-flex justify-content-center mt-5 mb-5" style="display: block;">
    
   
   <form class="form">
@@ -8,30 +8,36 @@
         <img class="img-fluid" src="../../../assets/shared/Login.png" alt="Login">
     </div>
 
-    <div class="mt-0 mb-0">
+    <div class="mt-1 mb-1">
       <input type="text" size="30" class="form-control" id="user" placeholder="Nickname">
     </div>
 
-    <div class="mt-0 mb-0">
+    <div class="mt-1 mb-1">
       <input type="text" size="30" class="form-control" id="nombres" placeholder="Nombres"> 
     </div>
 
-    <div class="mt-0 mb-0">
+    <div class="mt-1 mb-1">
       <input type="text" size="30" class="form-control" id="apellidos" placeholder="Apellidos">
     </div>
 
 
-    <div class="mt-0 mb-0">
+    <div class="mt-1 mb-1">
       <input type="email" size="30" class="form-control" id="correo" placeholder="Email">
     </div>
 
-    <div class="mt-0 mb-0">
+    <div class="mt-1 mb-1">
       <input type="password" size="30" class="form-control" id="password" placeholder="Contraseña">
+    </div>
+
+    <div class="mt-2 mb-3">
+      <div class="text">Fecha de nacimiento</div>
+      <input type="date" size="30" class="form-control" id="birth_date" value="2022-01-01">
     </div>
 
     <div class="mt-2 mb-3">
       <button [routerLink]="['/registro']" >REGISTRATE</button>
     </div>
+   
 
   </form>
 </div>
