@@ -6,28 +6,26 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-  }
-  
-  .form input {
-    width: 90%;
-    height: 30px;
-    margin: 0.3rem; 
-  }
-  
-  .form button {
+}
+
+.next {
     padding: 0.5em 1em;
     border: none;
     background: rgba(35, 59, 106, 1);
     color: white;
     cursor: pointer;
-    width: 120px;
+    width: 130px;
     height: 35px;
     border-radius: 8%;
   }
 
-  .logo-image{
-    width: 70px;
-    height: 70x;
-    overflow: hidden;
-    margin-top: -6px;
+.divb{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+  .label{
+      text-align: center;
   }

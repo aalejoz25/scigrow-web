@@ -1,0 +1,24 @@
+.form {
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+.form button {
+    padding: 0.5em 1em;
+    border: none;
+    background: rgba(35, 59, 106, 1);
+    color: white;
+    cursor: pointer;
+    width: 120px;
+    height: 40px;
+    border-radius: 8%;
+  }
+
+ 
