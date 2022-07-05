@@ -12,6 +12,7 @@ import { RegistroComponent } from './componentes/registro/registro.component';
 import { VistaProyectosUsuarioComponent } from './componentes/vista-proyectos-usuario/vista-proyectos-usuario.component';
 import { ProyectosComponent } from './componentes/proyectos/proyectos.component';
 import { ContrasenaComponent } from './componentes/contrasena/contrasena.component';
+import { AdicionarComponent } from './componentes/adicionar/adicionar.component';
 
 
 @NgModule({
@@ -25,6 +26,7 @@ import { ContrasenaComponent } from './componentes/contrasena/contrasena.compone
     VistaProyectosUsuarioComponent,
     ProyectosComponent,
     ContrasenaComponent,
+    AdicionarComponent,
     
   ],
   imports: [
