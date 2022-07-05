@@ -10,7 +10,7 @@
     <div class="mb-3">
       <input type="password" size="30" class="form-control" id="password" placeholder="Contraseña">
     </div>
-    <a href="" style="margin-bottom: 20px;" >Has olvidado tu contraseña?</a>
+    <a [routerLink]="['/contrasena']" style="margin-bottom: 20px;" >Has olvidado tu contraseña?</a>
     <button [routerLink]="['/proyectos_usuario']" style="margin-bottom: 25px;" type="submit">INICIAR SESION</button>
     <button [routerLink]="['/registro']" >REGISTRATE</button>
   </form>

@@ -5,6 +5,7 @@ import { LoginComponent } from './componentes/login/login.component';
 import { ProyectosComponent } from './componentes/proyectos/proyectos.component';
 import { RegistroComponent } from './componentes/registro/registro.component';
 import { VistaProyectosUsuarioComponent } from './componentes/vista-proyectos-usuario/vista-proyectos-usuario.component';
+import { ContrasenaComponent } from './componentes/contrasena/contrasena.component';
 
 const routes: Routes = [
   { path: 'login', component: LoginComponent },
@@ -12,6 +13,7 @@ const routes: Routes = [
   { path: 'registro', component: RegistroComponent },
   {path:'proyectos_usuario', component: VistaProyectosUsuarioComponent},
   {path:'proyectos', component: ProyectosComponent},
+  {path:'contrasena', component: ContrasenaComponent},
   { path: '**', pathMatch: 'full', redirectTo: 'inicio' },
   
   //{ path: '', redirectTo: 'inicio' },

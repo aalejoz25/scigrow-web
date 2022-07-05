@@ -11,6 +11,8 @@ import { LoginComponent } from './componentes/login/login.component';
 import { RegistroComponent } from './componentes/registro/registro.component';
 import { VistaProyectosUsuarioComponent } from './componentes/vista-proyectos-usuario/vista-proyectos-usuario.component';
 import { ProyectosComponent } from './componentes/proyectos/proyectos.component';
+import { ContrasenaComponent } from './componentes/contrasena/contrasena.component';
+
 
 @NgModule({
   declarations: [
@@ -21,7 +23,9 @@ import { ProyectosComponent } from './componentes/proyectos/proyectos.component'
     LoginComponent,
     RegistroComponent,
     VistaProyectosUsuarioComponent,
-    ProyectosComponent
+    ProyectosComponent,
+    ContrasenaComponent,
+    
   ],
   imports: [
     BrowserModule,
