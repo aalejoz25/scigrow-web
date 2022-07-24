@@ -6,22 +6,28 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './pagina_base/app.component';
 import { HeaderComponent } from './componentes/header/header.component';
 import { FooterComponent } from './componentes/footer/footer.component';
-import { InicioComponent } from './componentes/inicio/inicio.component';
+import { PoliticasPrivacidadComponent } from './componentes/politicas-privacidad/politicas-privacidad.component';
 import { LoginComponent } from './componentes/login/login.component';
 import { RegistroComponent } from './componentes/registro/registro.component';
 import { VistaProyectosUsuarioComponent } from './componentes/vista-proyectos-usuario/vista-proyectos-usuario.component';
-import { ProyectosComponent } from './componentes/proyectos/proyectos.component';
+import { BusquedasComponent } from './componentes/busquedas/busquedas.component';
+import { ContrasenaComponent } from './componentes/contrasena/contrasena.component';
+import { AdicionarComponent } from './componentes/adicionar/adicionar.component';
+
 
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
     FooterComponent,
-    InicioComponent,
+    PoliticasPrivacidadComponent,
     LoginComponent,
     RegistroComponent,
     VistaProyectosUsuarioComponent,
-    ProyectosComponent
+    BusquedasComponent,
+    ContrasenaComponent,
+    AdicionarComponent,
+    
   ],
   imports: [
     BrowserModule,

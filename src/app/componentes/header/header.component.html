@@ -23,12 +23,14 @@
       <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
         <ul class="navbar-nav">
           <li class="nav-item">
+          </li>
+          <li class="nav-item">
             <button
               type="button"
               class="btn btn-dark header-button padding-button"
             >
-              <a class="nav-link active sunflower" style="color: black;" aria-current="page" href="#"
-                >INICIO</a
+              <a class="nav-link active sunflower" style="color: black;" aria-current="page" [routerLink]="['/busquedas']"
+                >BUSQUEDAS</a
               >
             </button>
           </li>
@@ -37,17 +39,7 @@
               type="button"
               class="btn btn-dark header-button padding-button"
             >
-              <a class="nav-link active sunflower" style="color: black;" aria-current="page" [routerLink]="['/proyectos']"
-                >PROYECTOS</a
-              >
-            </button>
-          </li>
-          <li class="nav-item">
-            <button
-              type="button"
-              class="btn btn-dark header-button padding-button"
-            >
-              <a class="nav-link active sunflower" style="color: black;" aria-current="page" href="#"
+              <a class="nav-link active sunflower" style="color: black;" aria-current="page" [routerLink]="['/politicas_privacidad']"
                 >POLITICAS Y PRIVACIDAD</a
               >
             </button>

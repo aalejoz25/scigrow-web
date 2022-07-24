@@ -1,0 +1,33 @@
+
+<div class="container-fluid mt-3 mb-3">
+  <form class="form">
+    
+    <select class="form-select form-select-sm mt-3 mb-3" aria-label=".form-select-sm example" placeholder="Categoria">
+      <option selected>Seleccione una categoria</option>
+      <option value="1">Categoria 1</option>
+      <option value="2">Categoria 2</option>
+      <option value="3">Categoria 3</option>
+      <option value="4">Categoria 4</option>
+    </select>
+
+    <select class="form-select form-select-sm mt-3 mb-3" aria-label=".form-select-sm example">
+      <option selected>Seleccione una sub-categoria</option>
+      <option value="1">Sub-categoria 1</option>
+      <option value="2">Sub-categoria 2</option>
+      <option value="3">Sub-categoria 3</option>
+    </select>
+
+    <select class="form-select form-select-sm mt-3 mb-3" aria-label=".form-select-sm example" disabled>
+      <option selected>Seleccione un proyecto</option>
+      <option value="1">Proyecto 1</option>
+      <option value="2">Proyecto 2</option>
+      <option value="3">Proyecto 3</option>
+    </select>
+    
+    <div class="mt-2 mb-3">
+      <button [routerLink]="['/proyectos']" >Buscar</button>
+    </div>
+    
+  </form>
+
+</div>

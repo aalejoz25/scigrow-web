@@ -18,14 +18,13 @@ footer {
 }
 
 .copyright {
-  padding-top: 30px;
+  padding-top: 1px;
 }
 
 .logo-image{
   width: 70px;
   height: 70x;
   overflow: hidden;
-  margin-top: -6px;
 }
 
 .container {
