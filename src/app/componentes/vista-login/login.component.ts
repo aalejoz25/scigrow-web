@@ -59,10 +59,8 @@ export class LoginComponent implements OnInit {
           }else if(data.user_type == '2'){
             this.router.navigate(['/proyectos_usuario']);
           }
-          
         }
       }
     )
   }
-
 }

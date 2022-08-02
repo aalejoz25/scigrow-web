@@ -1,51 +1,47 @@
 <div class="d-flex justify-content-center mt-5 mb-5" style="display: block;">
  
-<form class="form">
+<form class="form" [formGroup]="formulario" (ngSubmit)="verificarDatos()" autocomplete="off">
     <h3>Registre un usuario</h3>
-      <div class="mt-1 mb-1">
-        <input type="text" size="30" class="form-control" id="user" placeholder="Nickname">
+      <div class="mt-1 mb-1 form-group">
+        <input type="text" size="30" class="form-control" id="username"  placeholder="Nickname" name="username" formControlName="username" [class.is-invalid]="usernameNoValido">
       </div>
   
-      <div class="mt-1 mb-1">
-        <input type="text" size="30" class="form-control" id="nombres" placeholder="Nombres"> 
+      <div class="mt-1 mb-1 form-group">
+        <input type="text" size="30" class="form-control" id="nombres" placeholder="Nombres" name="name" formControlName="name" [class.is-invalid]="nameNoValido"> 
       </div>
   
-      <div class="mt-1 mb-1">
-        <input type="text" size="30" class="form-control" id="apellidos" placeholder="Apellidos">
+      <div class="mt-1 mb-1 form-group">
+        <input type="text" size="30" class="form-control" id="apellidos" placeholder="Apellidos" name="lastname" formControlName="lastname" [class.is-invalid]="lastnameNoValido"> 
       </div>
-  
 
 
-      <div class="mt-1 mb-1">
-        <input type="email" size="30" class="form-control" id="correo" placeholder="Email">
+      <div class="mt-1 mb-1 form-group" >
+        <input type="email" size="30" class="form-control" id="correo" placeholder="Email" name="email" formControlName="email" [class.is-invalid]="emailNoValido">
       </div>
   
-      <div class="mt-1 mb-1">
-        <input type="password" size="30" class="form-control" id="password" placeholder="Contraseña">
+      <div class="mt-1 mb-1 form-group">
+        <input type="password" size="30" class="form-control" id="password" placeholder="Contraseña" name="password" formControlName="password" [class.is-invalid]="passwordNoValido">
       </div>
   
-      <div class="mt-2 mb-3">
+      <div class="mt-2 mb-3 form-group">
         <div class="text">Fecha de nacimiento</div>
-        <input type="date" size="30" class="form-control" id="birth_date" value="2022-01-01">
+        <input type="date" size="30" class="form-control" id="birthdate" value="2022-01-01" name="birthdate" formControlName="birthdate">
       </div>
   
-      <div class="mt-1 mb-1">
+      <div class="mt-1 mb-1 form-group">
         <label class="la" for="tiposUsuario">Seleccione tipo de usuario:</label>
-        <select class="form-control" name="tiposUsuario" id="tipoUsuario">
+        <select class="form-control" name="tipoUsuario" id="tipoUsuario" formControlName="tipoUsuario">
             <option value="" [defaultSelected]="true"></option>
             <option value="2">INVESTIGADOR</option>
             <option value="3">STAKEHOLDER</option>
         </select>
-
       </div>
 
       <div class="mt-2 mb-3">
-        <button class="btnBlue" [routerLink]="['/registro']" >REGISTRAR</button>
+        <button class="btnBlue" >REGISTRAR</button>
       </div>
       <div class="mt-2 mb-3">
         <button class="btnRed" [routerLink]="['/gestionar_usuarios']" >REGRESAR</button>
       </div>
-     
-  
     </form>
 </div>

@@ -7,7 +7,7 @@ import { map } from 'rxjs';
 })
 export class ApiService {
 
-  url: string = "http://localhost/scigrow_api/"
+  url: string = "https://scigrow.online/scigrow_api/"
 
   constructor(private httpClient: HttpClient) { }
 
@@ -21,6 +21,26 @@ export class ApiService {
       'Content-Type': 'application/json;charset="otf-8"'
     })
 
+    return this.httpClient.post(peticion, usuario, { headers }).pipe(map((data: any) => { return data }))
+  }
+
+  agregarUsuario(userName: string, firstName:string, lastName:string, email:string, password: string ,birthDate:any ,userType:any) {
+    const peticion = `${this.url}usuarios/services/services.usuario.php`
+    const usuario: any = {
+      tip:"registrarUsuario",
+      userName,
+      firstName,
+      lastName,
+      email,
+      password,
+      birthDate,
+      userType
+    };
+  
+    
+    const headers: HttpHeaders = new HttpHeaders({
+      'Content-Type': 'application/json;charset="otf-8"'
+    })
     return this.httpClient.post(peticion, usuario, { headers }).pipe(map((data: any) => { return data }))
   }
 
