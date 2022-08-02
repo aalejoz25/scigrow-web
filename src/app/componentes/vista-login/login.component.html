@@ -1,5 +1,5 @@
 <div class="d-flex justify-content-center mt mb" style="display: block">
-  <form class="form">
+  <form action="" class="form" [formGroup]="formulario" (ngSubmit)="verificarDatos()" autocomplete="off">
     <div style="padding-bottom: 10px" class="logo-image">
       <img
         class="img-fluid"
@@ -7,34 +7,41 @@
         alt="Login"
       />
     </div>
-    <div class="mb-3">
+    <div class="mb-3 form-group">
       <input
         type="text"
         size="30"
         class="form-control"
-        id="user"
+        id="username"
+        name="username"
+        formControlName="username"
         placeholder="Nombre de usuario"
+        [class.is-invalid]="usernameNoValido"
       />
+      <small *ngIf="usernameNoValido" class="text-danger">
+        Debe ingresar nombre de usuario
+      </small>
     </div>
-    <div class="mb-3">
+    <div class="mb-3 form-group">
       <input
         type="password"
         size="30"
         class="form-control"
         id="password"
+        name="password"
+        formControlName="password"
         placeholder="Contraseña"
+        [class.is-invalid]="passwordNoValido"
       />
+      <small *ngIf="passwordNoValido" class="text-danger">
+        Debe ingresar contraseña
+      </small>
     </div>
     <a [routerLink]="['/contrasena']" style="margin-bottom: 20px"
       >Has olvidado tu contraseña?</a
     >
-    <button
-      [routerLink]="['/proyectos_usuario']"
-      class="button"
-      type="submit"
-    >
+    <button class="button" type="submit">
       INICIAR SESION
     </button>
-  
   </form>
 </div>

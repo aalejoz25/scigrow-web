@@ -1,0 +1,20 @@
+.button{
+    padding: 0.5em 1em;
+    border: none;
+    background: rgba(35, 59, 106, 1);
+    color: white;
+    cursor: pointer;
+    width: 150px;
+    height: 55px;
+    border-radius: 8%;
+    margin-bottom: 25px;
+    font-size: small
+}
+
+.row{
+    width: 70%;
+}
+
+.img-margin{
+    margin-left: 30%;
+}

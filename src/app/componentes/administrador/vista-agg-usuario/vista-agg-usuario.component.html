@@ -1,0 +1,51 @@
+<div class="d-flex justify-content-center mt-5 mb-5" style="display: block;">
+ 
+<form class="form">
+    <h3>Registre un usuario</h3>
+      <div class="mt-1 mb-1">
+        <input type="text" size="30" class="form-control" id="user" placeholder="Nickname">
+      </div>
+  
+      <div class="mt-1 mb-1">
+        <input type="text" size="30" class="form-control" id="nombres" placeholder="Nombres"> 
+      </div>
+  
+      <div class="mt-1 mb-1">
+        <input type="text" size="30" class="form-control" id="apellidos" placeholder="Apellidos">
+      </div>
+  
+
+
+      <div class="mt-1 mb-1">
+        <input type="email" size="30" class="form-control" id="correo" placeholder="Email">
+      </div>
+  
+      <div class="mt-1 mb-1">
+        <input type="password" size="30" class="form-control" id="password" placeholder="Contraseña">
+      </div>
+  
+      <div class="mt-2 mb-3">
+        <div class="text">Fecha de nacimiento</div>
+        <input type="date" size="30" class="form-control" id="birth_date" value="2022-01-01">
+      </div>
+  
+      <div class="mt-1 mb-1">
+        <label class="la" for="tiposUsuario">Seleccione tipo de usuario:</label>
+        <select class="form-control" name="tiposUsuario" id="tipoUsuario">
+            <option value="" [defaultSelected]="true"></option>
+            <option value="2">INVESTIGADOR</option>
+            <option value="3">STAKEHOLDER</option>
+        </select>
+
+      </div>
+
+      <div class="mt-2 mb-3">
+        <button class="btnBlue" [routerLink]="['/registro']" >REGISTRAR</button>
+      </div>
+      <div class="mt-2 mb-3">
+        <button class="btnRed" [routerLink]="['/gestionar_usuarios']" >REGRESAR</button>
+      </div>
+     
+  
+    </form>
+</div>

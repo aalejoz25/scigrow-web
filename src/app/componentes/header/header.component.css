@@ -28,6 +28,13 @@
     margin-top: -6px;
 }
 
+.logo-logout{
+    width: 30px;
+    height: 30x;
+    overflow: hidden;
+    margin-top: -6px;
+}
+
 .sunflower{
     font-family: 'Sunflower', sans-serif;
 }

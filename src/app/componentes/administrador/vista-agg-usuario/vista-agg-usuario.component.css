@@ -20,11 +20,28 @@
     height: 30px;
     margin: 0.3rem; 
   }
+
+  .form select {
+    width: 90%;
+    height: 30px;
+    margin: 0.3rem; 
+  }
   
-  .form button {
+.btnBlue {
     padding: 0.5em 1em;
     border: none;
     background: rgba(35, 59, 106, 1);
+    color: white;
+    cursor: pointer;
+    width: 120px;
+    height: 40px;
+    border-radius: 8%;
+  }
+
+  .btnRed{
+    padding: 0.5em 1em;
+    border: none;
+    background: rgb(155, 52, 52);
     color: white;
     cursor: pointer;
     width: 120px;
