@@ -3,9 +3,9 @@ import { RouterModule, Routes } from '@angular/router';
 import { PoliticasPrivacidadComponent } from './componentes/politicas-privacidad/politicas-privacidad.component'
 import { LoginComponent } from './componentes/login/login.component';
 import { BusquedasComponent } from './componentes/busquedas/busquedas.component';
-import { VistaProyectosUsuarioComponent } from './componentes/vista-proyectos-usuario/vista-proyectos-usuario.component';
+import { VistaProyectosUsuarioComponent } from './componentes/usuario/vista-proyectos-usuario/vista-proyectos-usuario.component';
 import { ContrasenaComponent } from './componentes/contrasena/contrasena.component';
-import { AdicionarComponent } from './componentes/adicionar/adicionar.component';
+import { AdicionarComponent } from './componentes/usuario/adicionar/adicionar.component';
 
 const routes: Routes = [
 

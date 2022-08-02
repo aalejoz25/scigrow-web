@@ -1,18 +1,18 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { VistaAdminComponent } from './vista-admin.component';
+import { VistaGestUsrComponent } from './vista-gest-usr.component';
 
-describe('VistaAdminComponent', () => {
-  let component: VistaAdminComponent;
-  let fixture: ComponentFixture<VistaAdminComponent>;
+describe('VistaGestUsrComponent', () => {
+  let component: VistaGestUsrComponent;
+  let fixture: ComponentFixture<VistaGestUsrComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ VistaAdminComponent ]
+      declarations: [ VistaGestUsrComponent ]
     })
     .compileComponents();
 
-    fixture = TestBed.createComponent(VistaAdminComponent);
+    fixture = TestBed.createComponent(VistaGestUsrComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });
