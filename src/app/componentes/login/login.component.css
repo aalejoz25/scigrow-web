@@ -39,3 +39,8 @@
 .mb{
   margin-bottom: 8rem;
 }
+
+.button{
+  margin-bottom: 25px;
+  font-size: small
+}
