@@ -44,7 +44,8 @@ export class LoginComponent implements OnInit {
     this.error=false;
     let data ={
       isLogged:'',
-      user_type:''
+      user_type:'',
+      user_id:''
     }
     
     this.apiService.login(this.formulario.value.username,this.formulario.value.password).subscribe(
@@ -54,6 +55,7 @@ export class LoginComponent implements OnInit {
         if (data.isLogged=='FALSE') {
           this.error=true;
         }else if (data.isLogged=='TRUE') {
+          sessionStorage.setItem('userId', data.user_id);
           if (data.user_type == '1') {            
             this.router.navigate(['/gestionar_usuarios']);
           }else if(data.user_type == '2'){
