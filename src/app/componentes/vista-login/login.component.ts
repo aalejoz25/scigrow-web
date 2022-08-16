@@ -4,6 +4,7 @@ import { Router } from "@angular/router";
 import { FormBuilder, FormGroup, Validators } from "@angular/forms";
 import { response } from 'express';
 import Swal from 'sweetalert2/dist/sweetalert2.js';
+import { SesionService } from 'src/app/services/sesion.service';
 
 @Component({
   selector: 'app-login',
@@ -15,7 +16,7 @@ export class LoginComponent implements OnInit {
   formulario: FormGroup;
   error: boolean = false;
 
-  constructor(private apiService: ApiService, private router: Router, private formBuilder: FormBuilder) {
+  constructor(private apiService: ApiService, private router: Router, private formBuilder: FormBuilder, private sessionService: SesionService) {
     this.formulario = this.formBuilder.group({
       username: ['', Validators.required],
       password: ['', Validators.required]
@@ -68,7 +69,7 @@ export class LoginComponent implements OnInit {
 
           )
         } else if (data.isLogged == 'TRUE') {
-          sessionStorage.setItem('userId', data.id);
+          this.sessionService.setUsuario(data);
           if (data.userType == '1') {
             this.router.navigate(['/gestionar_usuarios']);
           } else if (data.userType == '2') {
