@@ -3,6 +3,7 @@ import { ApiService } from "../../services/api.service";
 import { Router } from "@angular/router";
 import { FormBuilder, FormGroup, Validators } from "@angular/forms";
 import { response } from 'express';
+import Swal from 'sweetalert2/dist/sweetalert2.js';
 
 @Component({
   selector: 'app-login',
@@ -34,35 +35,43 @@ export class LoginComponent implements OnInit {
     return this.formulario.get('password')?.invalid && this.formulario.get('password')?.touched;
   }
 
-  verificarDatos():any{
+  verificarDatos(): any {
     if (this.formulario.invalid) {
-      Object.values(this.formulario.controls).forEach(control=>{
+      Object.values(this.formulario.controls).forEach(control => {
         control.markAllAsTouched();
       })
       return;
     }
-    this.error=false;
-    let data ={
-      isLogged:'',
-      userType:'',
-      id:'',
-      userName:'',
-      pass:'',
-      email:'',
-      fName:'',
-      lName:''
+    this.error = false;
+    let data = {
+      isLogged: '',
+      userType: '',
+      id: '',
+      userName: '',
+      pass: '',
+      email: '',
+      fName: '',
+      lName: ''
     }
-    
-    this.apiService.login(this.formulario.value.username,this.formulario.value.password).subscribe(
-      response=>{
-        data = JSON.parse(JSON.stringify(response));       
-        if (data.isLogged=='FALSE') {
-          this.error=true;
-        }else if (data.isLogged=='TRUE') {
+
+    this.apiService.login(this.formulario.value.username, this.formulario.value.password).subscribe(
+      response => {
+        data = JSON.parse(JSON.stringify(response));
+        if (data.isLogged == 'FALSE') {
+          this.error = true;
+          Swal.fire({
+            icon: 'error',
+            title: 'Error',
+            text: 'Credenciales incorrectas',
+            showConfirmButton: true
+          }
+
+          )
+        } else if (data.isLogged == 'TRUE') {
           sessionStorage.setItem('userId', data.id);
-          if (data.userType == '1') {            
+          if (data.userType == '1') {
             this.router.navigate(['/gestionar_usuarios']);
-          }else if(data.userType == '2'){
+          } else if (data.userType == '2') {
             this.router.navigate(['/proyectos_usuario']);
           }
         }

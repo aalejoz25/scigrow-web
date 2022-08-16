@@ -71,6 +71,7 @@ export class VistaAggUsuarioComponent implements OnInit {
             showConfirmButton: true,   
           }) 
           console.log('se agrego usuario');
+          this.formulario.reset();
         } else {
           Swal.fire({  
             icon: 'error',  
