@@ -17,6 +17,7 @@ import { AdicionarComponent } from './componentes/usuario/adicionar/adicionar.co
 import { VistaGestUsrComponent } from './componentes/administrador/vista-gest-usr/vista-gest-usr.component';
 import { VistaGestProyComponent } from './componentes/administrador/vista-gest-proy/vista-gest-proy.component';
 import { VistaAggUsuarioComponent } from './componentes/administrador/vista-agg-usuario/vista-agg-usuario.component';
+import { CerrarSesionComponent } from './componentes/cerrar-sesion/cerrar-sesion.component';
 
 
 @NgModule({
@@ -33,6 +34,7 @@ import { VistaAggUsuarioComponent } from './componentes/administrador/vista-agg-
     VistaGestUsrComponent,
     VistaGestProyComponent,
     VistaAggUsuarioComponent,
+    CerrarSesionComponent,
     
   ],
   imports: [

@@ -8,6 +8,7 @@ import { ContrasenaComponent } from './componentes/vista-rec-contrasena/contrase
 import { AdicionarComponent } from './componentes/usuario/adicionar/adicionar.component';
 import { VistaGestUsrComponent } from "./componentes/administrador/vista-gest-usr/vista-gest-usr.component";
 import { VistaAggUsuarioComponent } from "./componentes/administrador/vista-agg-usuario/vista-agg-usuario.component"
+import { CerrarSesionComponent } from './componentes/cerrar-sesion/cerrar-sesion.component';
 
 const routes: Routes = [
 
@@ -19,6 +20,7 @@ const routes: Routes = [
   { path: 'gestionar_usuarios', component: VistaGestUsrComponent },
   { path: 'adicionar_proyecto', component: AdicionarComponent },
   { path: 'agregar_usuario', component: VistaAggUsuarioComponent },
+  { path: 'cerrar_sesion', component: CerrarSesionComponent },
   { path: '**', pathMatch: 'full', redirectTo: 'inicio' },
   { path: '', component: LoginComponent },
 
