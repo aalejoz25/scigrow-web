@@ -44,21 +44,25 @@ export class LoginComponent implements OnInit {
     this.error=false;
     let data ={
       isLogged:'',
-      user_type:'',
-      user_id:''
+      userType:'',
+      id:'',
+      userName:'',
+      pass:'',
+      email:'',
+      fName:'',
+      lName:''
     }
     
     this.apiService.login(this.formulario.value.username,this.formulario.value.password).subscribe(
       response=>{
-        console.log(response);
-        data = JSON.parse(JSON.stringify(response));
+        data = JSON.parse(JSON.stringify(response));       
         if (data.isLogged=='FALSE') {
           this.error=true;
         }else if (data.isLogged=='TRUE') {
-          sessionStorage.setItem('userId', data.user_id);
-          if (data.user_type == '1') {            
+          sessionStorage.setItem('userId', data.id);
+          if (data.userType == '1') {            
             this.router.navigate(['/gestionar_usuarios']);
-          }else if(data.user_type == '2'){
+          }else if(data.userType == '2'){
             this.router.navigate(['/proyectos_usuario']);
           }
         }

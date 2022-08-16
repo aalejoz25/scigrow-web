@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { ApiService } from "../../../services/api.service";
 import { Router } from "@angular/router";
 import { FormBuilder, FormGroup, Validators } from "@angular/forms";
+import Swal from 'sweetalert2/dist/sweetalert2.js';  
 
 @Component({
   selector: 'app-vista-agg-usuario',
@@ -56,7 +57,6 @@ export class VistaAggUsuarioComponent implements OnInit {
     this.error = false;
     let data = {
       addeduser: ''
-  
     }
 
     this.apiService.agregarUsuario(this.formulario.value.username,this.formulario.value.name,this.formulario.value.lastname,this.formulario.value.email,this.formulario.value.password,this.formulario.value.birthdate, this.formulario.value.tipoUsuario).subscribe(
@@ -65,8 +65,19 @@ export class VistaAggUsuarioComponent implements OnInit {
         data = JSON.parse(JSON.stringify(response));
         console.log(data);
         if (data.addeduser) {
+          Swal.fire({   
+            icon: 'success',  
+            title: 'Se ha agregado el usuario',  
+            showConfirmButton: true,   
+          }) 
           console.log('se agrego usuario');
         } else {
+          Swal.fire({  
+            icon: 'error',  
+            title: 'Error',
+            text:'Puede que el usuario ya exista',  
+            showConfirmButton: true,  
+          }) 
           console.log('ocurrio algun error');
         }
       }
